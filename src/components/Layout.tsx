@@ -6,7 +6,7 @@ const Layout: React.FC = ({children}) => {
   return (
     <div className="flex">
       <Sidebar />
-      <main className="flex-1">
+      <main className="flex-1 p-5 max-w-[1280px] mx-auto">
         <div>
           { children }
         </div>

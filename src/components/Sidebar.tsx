@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
           </li>
           <li>
             <NavLink 
-              to="/events"
+              to="/calendar"
               className={({ isActive }) => isActive ? activeLink : normalLink }
             >
               <AiOutlineCalendar className="text-2xl" />

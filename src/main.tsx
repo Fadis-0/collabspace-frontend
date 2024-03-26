@@ -7,10 +7,15 @@ import {
   RouterProvider, 
 } from 'react-router-dom';
 
+import Layout from './components/Layout';
+
 import App from './App.tsx';
+
+import Login from './pages/Login';
+
 import Dashboard from './pages/Dashboard';
 import Chat from './pages/Chat';
-import Layout from './components/Layout';
+import Calendar from './pages/Calendar';
 
 
 const router = createBrowserRouter([
@@ -19,12 +24,20 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
+    path: "/login",
+    element: <Login />
+  },
+  {
     path: "/dashboard",
     element: <Layout><Dashboard /></Layout>
   },
   {
     path: "/chat",
     element: <Layout><Chat /></Layout>
+  },
+  {
+    path: "/calendar",
+    element: <Layout><Calendar /></Layout>
   },
 ]);
 
