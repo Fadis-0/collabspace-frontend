@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           </div>
           <ul className="flex gap-4 items-center">
             <li className="">
-              <AiOutlineBell className="text-2xl text-gray-400 hover:text-gray-600 transition-all duration-200 cursor-pointer" />
+              <AiOutlineBell className="text-xl text-gray-400 hover:text-gray-600 transition-all duration-200 cursor-pointer" />
             </li>
 
             <li className="flex items-center gap-0.5 cursor-pointer transition-all duration-200">
