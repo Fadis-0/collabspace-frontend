@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
 const Layout: React.FC = ({children}) => {
@@ -6,12 +8,17 @@ const Layout: React.FC = ({children}) => {
   return (
     <div className="flex">
       <Sidebar />
-      <main className="flex-1 p-5 max-w-[1280px] mx-auto">
-        <div>
-          { children }
-        </div>
+      
+      <div className="flex flex-col w-full pl-14">
+        <Navbar />
+        <main className="w-full h-full max-w-[1280px] mx-auto">
+          <div className="w-full h-full flex-1 px-4 pt-16 ">
+            { children }
+          </div>
 
-      </main>
+        </main>
+      </div>
+
     </div>
   )
 }

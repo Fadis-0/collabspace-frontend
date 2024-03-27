@@ -18,3 +18,24 @@ body {
 .roboto {
 	font-family: Roboto, sans-serif;
 }
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: lightgray;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #7f5af0;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: lightgray;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: #7f5af0;
+}

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import { 
   AiOutlineMessage,
+  AiOutlineMenu,
   AiOutlineDashboard,
   AiOutlineCalendar,
   AiOutlineLogout,
@@ -16,8 +17,13 @@ const Sidebar: React.FC = () => {
   
   return (
     <aside className="" aria-label="Sidebar">
-      <div className="overflow-y-auto h-screen py-4 px-2.5 bg-neutral-800">
+      <div className="overflow-y-auto fixed h-full py-4 px-2.5 bg-neutral-800 shadow-sm">
         <ul className="space-y-3 relative h-full">
+          <li className="mb-6">
+            <div className="flex items-center p-1.5 text-base text-gray-100 transition-all duration-200 rounded-full cursor-pointer hover:bg-neutral-700" >
+              <AiOutlineMenu className="text-2xl" />
+            </div>
+          </li>
           <li>
             <NavLink 
               to="/dashboard"
